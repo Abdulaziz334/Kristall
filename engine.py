@@ -14,3 +14,9 @@ def start_engine():
 
 if __name__ == "__main__":
     start_engine()
+KristallEngine/
+├── ai_core.py
+├── engine.py
+├── physics.py
+├── renderer.py
+└── README.md
