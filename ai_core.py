@@ -20,3 +20,10 @@ class AIEngine:
 
     def get_memory(self, key):
         return self.memory.get(key, None)
+class AIEngine:
+    def process_input(self, input_data):
+        if input_data == "move":
+            return "moving"
+        elif input_data == "attack":
+            return "attacking"
+        return "idle"
