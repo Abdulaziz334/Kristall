@@ -1,0 +1,10 @@
+{
+  "engine_name": "KristallEngine",
+  "language": "uz",
+  "ui_theme": "dark",
+  "max_payload_kg": 5,
+  "gps_tracking": true,
+  "ai_control_enabled": true,
+  "base_locations": ["Toshkent", "Samarqand", "Buxoro"],
+  "payment_methods": ["UZC", "QR", "Payme"]
+}
