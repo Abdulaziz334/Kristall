@@ -12,3 +12,6 @@ class PhysicsEngine:
 
     def calculate_force(self, mass, acceleration):
         return mass * acceleration
+class PhysicsEngine:
+    def apply_gravity(self, mass, time, g=9.81):
+        return mass * g * time
