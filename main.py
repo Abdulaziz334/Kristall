@@ -20,3 +20,17 @@ graphics.add_object("Logo.png")
 audio.play_sound("intro.wav")
 print(ai.process_input("move"))
 print("Gravitatsiya:", physics.apply_gravity(1, 5))
+# main.py
+
+from ui_manager import UIManager
+
+def main():
+    ui = UIManager()
+    ui.show_main_menu()
+
+    while True:
+        user_input = input("Tanlovni kiriting: ")
+        ui.handle_input(user_input)
+
+if __name__ == "__main__":
+    main()
