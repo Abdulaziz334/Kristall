@@ -34,3 +34,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+from fastapi import FastAPI
+from api.routes import router as api_router
+
+app = FastAPI(title="Kristallengine")
+
+app.include_router(api_router)
