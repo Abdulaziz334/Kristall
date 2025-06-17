@@ -5,3 +5,6 @@ Bu yerda quyidagilar joylashtiriladi:
 - Ikonkalar (SVG, PNG)
 - Video va audio fayllar (agar kerak bo‘lsa)
 Batafsil: [API so‘rovlar namunalari](docs/api_examples.md)
+## 📖 Hujjatlar
+
+- [Namuna API so‘rovlari](docs/api_examples.md)
