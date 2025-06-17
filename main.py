@@ -40,3 +40,9 @@ from api.routes import router as api_router
 app = FastAPI(title="Kristallengine")
 
 app.include_router(api_router)
+from fastapi import FastAPI
+from api import order
+
+app = FastAPI(title="Kristallengine API")
+
+app.include_router(order.router, prefix="/api")
