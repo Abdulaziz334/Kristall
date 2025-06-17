@@ -35,3 +35,4 @@ Kristallengine/
 ├── docs/               # Hujjatlar va diagrammalar
 │
 └── README.md
+Batafsil: [API so‘rovlar namunalari](docs/api_examples.md)
