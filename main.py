@@ -46,3 +46,12 @@ from api import order
 app = FastAPI(title="Kristallengine API")
 
 app.include_router(order.router, prefix="/api")
+from auth.login import login
+
+parol = input("🔐 KristallEngine’ga kirish uchun parolni kiriting: ")
+
+if login(parol):
+    print("✅ Kirish muvaffaqiyatli. KristallEngine ishga tushmoqda...")
+    # Asosiy tizimni bu yerga yozasiz
+else:
+    print("❌ Noto‘g‘ri parol. Kirish rad etildi.")
