@@ -36,3 +36,27 @@ def add_user(user_id, name):
     data.append(user)
     with open(USERS_FILE, "w") as f:
         json.dump(data, f, indent=4)
+from admin_panel.manage_orders import view_orders
+from admin_panel.manage_bases import view_bases
+
+def admin_menu():
+    while True:
+        print("\n🛠 ADMIN PANEL")
+        print("1. Buyurtmalar")
+        print("2. Bazalar")
+        print("0. Chiqish")
+
+        tanlov = input("Tanlang: ")
+
+        if tanlov == "1":
+            view_orders()
+        elif tanlov == "2":
+            view_bases()
+        elif tanlov == "0":
+            break
+        else:
+            print("❌ Noto‘g‘ri tanlov.")
+
+# Dastur ishga tushganda chaqirilsin
+if __name__ == "__main__":
+    admin_menu()
