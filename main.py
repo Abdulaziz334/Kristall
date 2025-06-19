@@ -55,3 +55,29 @@ if login(parol):
     # Asosiy tizimni bu yerga yozasiz
 else:
     print("❌ Noto‘g‘ri parol. Kirish rad etildi.")
+from order_module import create_order
+from payment_module import process_payment
+from ai_engine import log_user_action
+
+# 1. Buyurtma yaratish
+user_id = "user_456"
+product_id = "prod789"
+user_location = "Toshkent"
+
+order = create_order(user_id, product_id, user_location)
+print("Buyurtma:", order)
+
+# 2. Foydalanuvchi harakatini yozish (AI kuzatuv uchun)
+log_user_action(user_id, "created_order", {
+    "order_id": order["order_id"],
+    "product_id": product_id
+})
+
+# 3. To‘lovni amalga oshirish
+payment = process_payment(
+    order_id=order["order_id"],
+    amount=120000,
+    method="QR-PAYME",
+    payer_id=user_id
+)
+print("To‘lov natijasi:", payment)
