@@ -1,2 +1,1 @@
-# security/__init__.py
-from .auth import is_authorized
+# security/__init__.py from .auth import is_authorized
